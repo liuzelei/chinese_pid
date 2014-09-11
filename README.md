@@ -1,38 +1,25 @@
-<<<<<<< HEAD
-# ChinesePid
+# PRC公民身份证号码验证和信息提取
 
-TODO: Write a gem description
+[![Travis](https://travis-ci.org/liuzelei/chinese_pid.svg?branch=master)](https://travis-ci.org/liuzelei/chinese_pid)
 
-## Installation
+## 安装
 
-Add this line to your application's Gemfile:
+Gemfile文件中添加:
 
-```ruby
-gem 'chinese_pid'
-```
+	gem 'chinese_pid'
 
-And then execute:
+bundle:
 
     $ bundle
 
-Or install it yourself as:
+或者直接安装:
 
     $ gem install chinese_pid
 
-## Usage
+## 使用
 
-TODO: Write usage instructions here
+	ChinesePid.new("your id card").valid? #返回是否通过验证
+	ChinesePid.new("your id card").gender #1是男性/0是女性
+	ChinesePid.new("your id card").birthday  #Date类型的生日
 
-## Contributing
-
-1. Fork it ( https://github.com/[my-github-username]/chinese_pid/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
-=======
-chinese_pid
-===========
-
-中华人民共和国公民身份证号码验证和信息提取
->>>>>>> 55155bf4cfb049677b3c6525befea2c7d48232eb
+支持15位和18位身份证号
