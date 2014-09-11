@@ -1,10 +1,9 @@
-# coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "chinese_pid"
-  spec.version       = ChinesePid.VERSION
+  spec.version       = "0.0.1"
   spec.authors       = ["liuzelei"]
   spec.email         = ["liuzelei@gmail.com"]
   spec.summary       = "验证RPC公民身份证号码"
