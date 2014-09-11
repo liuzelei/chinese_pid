@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ChinesePid
 
 TODO: Write a gem description
@@ -29,3 +30,9 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+=======
+chinese_pid
+===========
+
+中华人民共和国公民身份证号码验证和信息提取
+>>>>>>> 55155bf4cfb049677b3c6525befea2c7d48232eb
