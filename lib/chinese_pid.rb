@@ -26,7 +26,7 @@ class ChinesePid
 
   def valid?
     return false if @pid.size != 15 && @pid.size != 18
-    return false unless /^\d{6}(18|19|20)?\d{2}(0[1-9]|1[12])(0[1-9]|[12]\d|3[01])\d{3}(\d|x|X)?$/.match(@pid)
+    return false unless /^\d{6}(18|19|20)?\d{2}(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])\d{3}(\d|x|X)?$/.match(@pid)
     return false if CITY_CODES[@pid[0, 2]].nil?
     unless old_standard?
       factor = [7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2]

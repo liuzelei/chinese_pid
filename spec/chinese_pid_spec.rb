@@ -41,5 +41,11 @@ RSpec.describe ChinesePid do
     expect(p8.gender).to eq(1)
     expect(p8.birthday).to eq(Date.new(2012, 1, 1))
     expect(p8.valid?).to be_truthy
+
+    # add 10 month
+    p10 = ChinesePid.new("310221195510153639")
+    expect(p10.gender).to eq(1)
+    expect(p10.birthday).to eq(Date.new(1955, 10, 15))
+    expect(p10.valid?).to be_truthy
   end
 end
