@@ -48,4 +48,12 @@ RSpec.describe ChinesePid do
     expect(p10.birthday).to eq(Date.new(1955, 10, 15))
     expect(p10.valid?).to be_truthy
   end
+
+  it 'return province' do
+    p1 = ChinesePid.new('411081198304138650')
+    expect(p1.province).to eq('河南省')
+
+    p2 = ChinesePid.new('22010119771013499X')
+    expect(p2.province).to eq('吉林省')
+  end
 end

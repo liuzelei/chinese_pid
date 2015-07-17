@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "chinese_pid"
-  spec.version       = "0.0.2"
+  spec.version       = "0.0.3"
   spec.authors       = ["liuzelei"]
   spec.email         = ["liuzelei@gmail.com"]
   spec.summary       = "验证RPC公民身份证号码"

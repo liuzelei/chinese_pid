@@ -49,6 +49,11 @@ class ChinesePid
     end
   end
 
+  def province
+    return nil unless valid?
+    return CITY_CODES[@pid[0, 2]]
+  end
+
   def old_standard?
     return true if @pid.size == 15
     return false
